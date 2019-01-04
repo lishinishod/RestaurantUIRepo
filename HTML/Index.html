@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="../JS/Script.js"></script>
+  <script type="text/javascript" src="../JS/app.js"></script>
+</head>
+<body ng-app = "rest">
+<SECTION id="Home">
+   <div class="bgDiv">
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">
+     	    	<i class="fa fa-navicon"></i>
+            </button>
+        </div>
+        <div id="mySidebar" class="sidebar">
+        	<div class="navMenu">
+         		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-close"></i></a>
+         		<a href="#Home">Home</a>
+         		<a href="#About">About Us</a>
+         		<a href="#MenuR">Menu</a>
+         		<a href="#Book">Book A Table</a>
+         		<a href="#Order">Order Online</a>
+         		<a href="#Gallery">Gallery</a>
+         		<a href="#Contact">Contact</a>
+            </div>
+            <div class="socialMedia">
+            	<a href="#"><i class="fa fa-facebook"></i></a>
+            	<a href="#"><i class="fa fa-twitter"></i></a>
+            	<a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+      	</div>
+      	<div class="iconDiv">
+        	<button class="openbtn" onclick="openForm()">
+     	  		<i class="fa fa-user-circle"></i>
+        	</button>
+      	</div>
+      	<div id="myForm">
+      		<form action="/action_page.php" class="form-container">
+      			<div>
+      				<h1>Login</h1>
+         			<a href="javascript:void(0)" class="closebtn" onclick="closeForm()"><i class="fa fa-close"></i></a>
+      			</div>
+      			<div class="inputDiv">
+      				<span>UserName</span>
+         			<input type="text" placeholder="Enter Username" name="username" required>
+      			</div>
+      			<div class="inputDiv">
+      				<span>Password</span>
+         			<input type="password" placeholder="Enter Password" name="psw" required>
+      			</div>
+      			<div>
+      				<a href="#" class="forgotpass">Forgot Password?</a>
+      			</div>
+      			<div>
+					<button type="submit" class="login-btn">Login</button>
+      			</div>
+      			<div class="sign">
+      				<span>Or Sign Up Using</span>
+      			</div>
+      			<div class="media">
+      				<a href="" class="fb"><i class="fa fa-facebook"></i></a>
+      				<a href="" class="tw"><i class="fa fa-twitter"></i></a>
+      				<a href="" class="go"><i class="fa fa-google"></i></a>
+      			</div>
+      			<div class="sign">
+      				<span>Or Sign Up Using</span>
+      				<a href="">SIGN UP</a>
+      			</div>
+      		</form>
+    	</div>
+ 		<a href="#Home" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+   </div>
+</SECTION>
+<section id="About">
+	<div id="about_div">
+        <div>
+        	<img src="../Image/about.jpeg" class="abtImage">
+        </div>
+        <div>
+        	<h1>ABOUT US</h1>
+        	<p>Just as the name implies, food restaurant is used to describe a much more upscale restaurant, one that offers diners an elegant atmosphere with high quality service.The chefs in this restaurant are usually professionally trained.A restaurant that is passionate about sustainable food, creative expression and healthy people.</p>
+        </div>
+	</div>
+</section>
+<section id="MenuR" ng-controller="menuController">
+	<div id="Menu">
+		<h1>Our Menu</h1>
+		<p>Tasty - Delicious - Savoury</p>
+		<img src="../Image/menu.png">
+		<div class="nonVeg">
+			<ul>
+				<h2>Non-Veg</h2>
+				<li ng-repeat = "x in content | filter:{vegflag:'nonveg'}:true ">
+					{{x.name}}
+					<span><i class="fa fa-inr"></i>{{" "+x.price}}</span>
+				</li>
+			</ul>
+		</div>
+		<div class="veg">
+			<ul>
+				<h2>Veg</h2>
+				<li ng-repeat = "x in content | filter:{vegflag:'veg'}:true ">
+					{{x.name}}
+					<span><i class="fa fa-inr"></i>{{" " + x.price}}</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section id="Book">
+	<div id="book_table">
+		<div class="book_img">
+		</div>
+		<div id="book_div">
+			<div class="reserveDiv">
+				<h1>Make A Reservation</h1>	
+			</div>
+			<div class="reserveForm">
+				<form>
+					<input type="text" name="Name" placeholder="Name" required>
+					<input type="text" name="Email" placeholder="Email" required>
+					<input type="text" name="Contact" placeholder="Contact No." required>
+					<select name="no_of_person" required>
+						<option selected>No. of Person</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+					<input type="date" name="date" placeholder="Date">
+					<input type="datetime-local" name="time" placeholder="Time">
+					<select name="preffered_food">
+						<option selected>Preferred Food</option>
+						<option>Indian</option>
+						<option>Continental</option>
+						<option>Mexican</option>
+					</select>
+					<select name="Occasion">
+						<option selected>Occasion</option>
+						<option>Wedding</option>
+						<option>Birthday</option>
+					</select>
+					<textarea class="area" placeholder="Message"></textarea>
+					<button class="book_btn">BOOK MY TABLE</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Order" ng-controller="menuController">
+	<div id="orderOnline">
+		<p>Best Quality</p>
+		<p class="Delivery">Best Delivery</p>
+		<h1>Order Online</h1>
+		<img src="../Image/food.png" class="food">
+		<img src="../Image/food1.jpg" class="food1">
+		<img src="../Image/food2.png" class="food2">
+		<ul class="foodCat">
+			<li><a href="" class="active link" onclick="selectCat(this)">All</a></li>
+			<li ng-repeat="x in content | unique: 'category'"><a href="" class="link " onclick="selectCat(this)">{{x.category}}</a></li>
+		</ul>
+		<table>
+			<tr>
+				<th colspan="3" class="tdheading">All</th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr ng-repeat="x in content" ng-disabled="checkTime(x.availabletime, x.name)" class="dish">
+
+    			<td><button class="button red" ng-show="x.vegflag == 'nonveg'"></button> <button class="button green" ng-show="x.vegflag != 'nonveg'"></button>{{ x.name }} <br> <span>{{x.description}}</span></td>
+    			<td><i class="fa fa-inr"></i> {{ x.price }}</td>
+    			<td><div><input type="button" value="-" ng-disabled="checkCount(x.name)" ng-click="subtract(x.name, x.price)"><span class="count" style="margin: 0 12px 0 12px">0</span><input type="button" value="+" ng-click="add(x.name, x.price)" ng-disabled="show"></div></td>
+    			<td ng-show="show">Next Available at <br>{{x.availabletime}}</td>
+    			<td ng-show="false">{{x.category}}</td>
+  			</tr>
+		</table>
+		<a href="" class="cart">
+			<i class="fa fa-shopping-cart" ng-click="showCart(true)"></i>
+			<span>0</span>
+		</a>
+		<div class="cartElement" id="nonEmptyCart">
+			<div class="cartDes">
+				<table id="cartContent">
+				</table>
+			</div>
+			<div>
+				<div class="subtotal" style="font-size: 20px; left: 10%">Sub-Total : </div>
+				<div class="subtotal" style="font-size: 20px; right: 10%" id="Total">Rs. 150</div>
+			</div>
+			<button>CHECKOUT</button>
+		</div>
+		<div id="emptyCart" class="cartElement">
+			<h1>Cart Empty</h1>
+			<p>Go ahead, order some yummy food.</p>
+		</div>
+	</div>
+</section>
+<section id="Gallery">
+	<div class="Gallerydiv">
+	<div class="Gallery">Gallery</div>
+	<div class="small" style="margin-left: 4%">
+		<img src="../Image/Optimized-img1.jpg" onclick="openModal(); currentSlide(1)">
+		<img src="../Image/Optimized-img2.jpg" onclick="openModal(); currentSlide(2)">
+		<img src="../Image/Optimized-img3.jpg" onclick="openModal(); currentSlide(3)">
+		<img src="../Image/Optimized-img4.jpg" onclick="openModal(); currentSlide(4)">
+	</div>
+	<div class="small">
+		<img src="../Image/Optimized-img5.jpeg" onclick="openModal(); currentSlide(5)">
+		<img src="../Image/Optimized-img6.jpg" onclick="openModal(); currentSlide(6)">
+		<img src="../Image/Optimized-img7.jpg" onclick="openModal(); currentSlide(7)">
+		<img src="../Image/Optimized-img10.jpg" onclick="openModal(); currentSlide(8)">
+	</div>
+	<div class="small">
+		<img src="../Image/Optimized-img9.jpg" onclick="openModal(); currentSlide(9)">
+		<img src="../Image/Optimized-img8.jpg" onclick="openModal(); currentSlide(10)">
+		<img src="../Image/Optimized-img11.jpeg" onclick="openModal(); currentSlide(11)">
+		<img src="../Image/Optimized-img17.jpg" onclick="openModal(); currentSlide(12)">
+	</div>
+	<div class="small">
+		<img src="../Image/Optimized-img13.jpeg" onclick="openModal(); currentSlide(13)">
+		<img src="../Image/Optimized-img14.jpeg" onclick="openModal(); currentSlide(14)">
+		<img src="../Image/Optimized-img15.jpeg" onclick="openModal(); currentSlide(15)">
+		<img src="../Image/Optimized-img16.jpeg" onclick="openModal(); currentSlide(16)">
+		<img src="../Image/Optimized-img12.jpeg" onclick="openModal(); currentSlide(17)">
+	</div>
+	<div id="myModal">
+ 		<a href="javascript:void(0)" class="closebtn" onclick="closeModal()"><i class="fa fa-close"></i></a>
+		<img src="../Image/img1.jpg" class="myslides">
+		<img src="../Image/img2.jpg" class="myslides">
+		<img src="../Image/img3.jpg" class="myslides">
+		<img src="../Image/img4.jpg" class="myslides">
+		<img src="../Image/img5.jpeg" class="myslides">
+		<img src="../Image/img6.jpg" class="myslides">
+		<img src="../Image/img7.jpg" class="myslides">
+		<img src="../Image/img8.jpg" class="myslides">
+		<img src="../Image/img9.jpg" class="myslides">
+		<img src="../Image/img10.jpg" class="myslides">
+		<img src="../Image/img11.jpeg" class="myslides">
+		<img src="../Image/img12.jpeg" class="myslides">
+		<img src="../Image/img13.jpeg" class="myslides">
+		<img src="../Image/img14.jpeg" class="myslides">
+		<img src="../Image/img15.jpeg" class="myslides">
+		<img src="../Image/img16.jpeg" class="myslides">
+		<img src="../Image/img17.jpg" class="myslides">
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+	</div>
+</section>
+<section id="Contact">
+	<div id="contact_div">
+		<div class="letter">
+			<div class="newsletter">Newsletter</div>
+			<form>
+				<input type="email" placeholder="Enter your email id">
+				<a href="#"><i class="fa fa-paper-plane-o"></i> </a>
+			</form>
+		</div>
+		<div class="contact_detail">
+			<div class="restaurant_name">
+				<h1>FOOd</h1>
+				<p>Restaurant</p>
+			</div>
+				<div class="aboutus">
+					<h2 class="heading">About Us</h2>
+					<p>Restaurant that offers diners an elegant atmosphere with high quality service and is passionate about sustainable food, creative expression and healthy people.</p>
+					<div>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+            			<a href="#"><i class="fa fa-twitter"></i></a>
+            			<a href="#"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="contactus">
+					<h2 class="heading">Contact Us</h2>
+					<p><i class="fa fa-map-signs"></i> 04, XYZ Street, ABC, Bangalore</p>
+					<p><i class="fa fa-mobile"></i> 978xxxxx09</p>
+					<p><i class="fa fa-envelope"></i> support@food.com</p>
+				</div>
+				<div class="openninghours">
+					<h2 class="heading">Openning Hours</h2>
+					<ul>
+						<li>
+							<p>Monday - Thrusday</p>
+							<span>11:00 AM - 9:00 PM</span>
+						</li>
+						<li>
+							<p>Friday - Sunday</p>
+							<span>11:00 AM - 11:00 PM</span>
+						</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+</section>
+</body>
+</html>

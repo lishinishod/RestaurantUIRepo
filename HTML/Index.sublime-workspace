@@ -1,0 +1,334 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"back",
+				"background-attachment\tproperty"
+			],
+			[
+				"border",
+				"border-radius\tproperty"
+			],
+			[
+				"inline",
+				"inline-grid\tdisplay"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"padding",
+				"padding-left\tproperty"
+			],
+			[
+				"margin-",
+				"margin-left\tproperty"
+			],
+			[
+				"in",
+				"inline-flex\tdisplay"
+			],
+			[
+				"get",
+				"getElementsByTagName"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"align",
+				"align-items\tproperty"
+			],
+			[
+				"co",
+				"color\tproperty"
+			],
+			[
+				"list",
+				"list-style-type\tproperty"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			],
+			[
+				"link",
+				"links"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"background",
+				"background-color\tproperty"
+			],
+			[
+				"al",
+				"align-self\tproperty"
+			],
+			[
+				"alig",
+				"align-items\tproperty"
+			],
+			[
+				"border-bo",
+				"border-bottom-color\tproperty"
+			],
+			[
+				"border-",
+				"border-style\tproperty"
+			],
+			[
+				"h",
+				"html"
+			],
+			[
+				"bacl",
+				"background-color\tproperty"
+			],
+			[
+				"background-i",
+				"background-image\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"margi",
+				"margin-bottom\tproperty"
+			],
+			[
+				"pa",
+				"padding-bottom\tproperty"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"background-",
+				"background-attachment\tproperty"
+			],
+			[
+				"a",
+				"auto\tbackground-size"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"bg",
+				"background-color\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/lishinishod/Desktop/Websites/Restaurant/HTML/Index.html",
+		"/Users/lishinishod/Desktop/Websites/Restaurant/HTML/index.html",
+		"/Users/lishinishod/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/F2519FBF-6D47-41A6-BB75-49709C254539/style.css",
+		"/Users/lishinishod/Desktop/Websites/Profile/Html/Contact.html",
+		"/Users/lishinishod/Desktop/Websites/Profile/Html/Index.html",
+		"/Users/lishinishod/Desktop/Websites/Profile/Html/Work.html",
+		"/Users/lishinishod/Desktop/Websites/Profile/Css/IndexStyle.css",
+		"/Users/lishinishod/Desktop/Websites/Profile/JS/app.js",
+		"/Users/lishinishod/Desktop/Websites/Profile/Html/Projects.html",
+		"/Users/lishinishod/Desktop/Websites/Profile/Html/Skills.html",
+		"/Users/lishinishod/Desktop/Websites/Profile/Html/Resume.html",
+		"/Users/lishinishod/Desktop/Websites/Profile/JS/Script.js",
+		"/Users/lishinishod/Desktop/Websites/Profile/Html/AboutMe.html",
+		"/Users/lishinishod/Desktop/Websites/Profile/Html/Home.html",
+		"/Users/lishinishod/Desktop/Websites/Profile/Html/Education.html",
+		"/Users/lishinishod/Desktop/Websites/Profile/Html/Experience.html",
+		"/Users/lishinishod/Desktop/Websites/Profile/Photo/me2.jpg",
+		"/Users/lishinishod/.Trash/me2.jpg"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Index.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
